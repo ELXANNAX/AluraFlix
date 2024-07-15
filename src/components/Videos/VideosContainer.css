@@ -1,0 +1,35 @@
+.video-container {
+  width: 200vh;
+  height: 20em;
+  padding-inline: 1em;
+  margin-top: 2em;
+  margin-bottom: 5em;
+  display: flex;
+  overflow-x: scroll;
+  gap: 2em;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #41a6ff;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .video-container {
+    width: 100%;
+  }
+
+  ::-webkit-scrollbar {
+    width: 1px;
+    height: 5px;
+  }
+}

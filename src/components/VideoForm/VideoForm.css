@@ -1,0 +1,162 @@
+.formulario {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 1fr;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.grupo {
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.grupo.completo {
+  grid-column: span 1;
+}
+
+.grupo.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1em auto;
+}
+
+.grupo label {
+  margin-bottom: 0.5em;
+  color: white;
+}
+
+.grupo input,
+select {
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 20rem;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.option {
+  color: white;
+  background-color: rgb(20, 28, 30);
+}
+
+.button {
+  padding: 1em;
+  width: 9em;
+  background-color: transparent;
+  color: white;
+  border: solid 1px blue;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="reset"] {
+  background-color: transparent;
+  border: solid 1px white;
+  margin-left: 10px;
+}
+
+.error {
+  color: tomato;
+}
+
+@media screen and (min-width: 768px) {
+  .formulario {
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .formulario {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .grupo {
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grupo.completo {
+    grid-column: span 1;
+  }
+
+  .formulario {
+    display: grid;
+    gap: 4.5em;
+    grid-template-columns: repeat(2, 1fr);
+    width: 190vh;
+    margin: 0 auto;
+  }
+
+  .grupo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grupo.completo {
+    grid-column: span 2;
+  }
+
+  .grupo.botones {
+    display: flex;
+    flex-direction: row;
+    grid-column: span 2;
+    margin: 1em auto;
+  }
+
+  .description {
+    padding-bottom: 10em;
+    width: 40em;
+  }
+
+  .grupo label {
+    margin-bottom: 1em;
+    color: white;
+  }
+
+  .grupo input,
+  select {
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.234);
+  }
+
+  option {
+    color: white;
+    background-color: rgb(20, 28, 30);
+  }
+
+  .button {
+    padding: 1em;
+    width: 9em;
+    background-color: transparent;
+    color: white;
+    border: solid 1px blue;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button[type="reset"] {
+    background-color: transparent;
+    border: solid 1px white;
+    margin-left: 10px;
+  }
+
+  .error {
+    color: tomato;
+  }
+}
